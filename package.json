@@ -1,0 +1,29 @@
+{
+  "name": "craftzdog-homepage",
+  "version": "1.0.0",
+  "description": "Taylor's Portfolio",
+  "scripts": {
+    "dev": "next dev -H 0.0.0.0",
+    "build": "next build",
+    "prettier": "prettier -write .",
+    "lint": "next lint"
+  },
+  "keywords": [],
+  "author": "Taylor Yip",
+  "license": "MIT",
+  "dependencies": {
+    "@chakra-ui/icons": "^2.0.6",
+    "@chakra-ui/react": "^2.2.6",
+    "@emotion/react": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
+    "framer-motion": "^7.0.0",
+    "next": "^12.2.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.21.0",
+    "eslint-config-next": "^12.2.4",
+    "prettier": "^2.7.1"
+  }
+}
