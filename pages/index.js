@@ -15,6 +15,7 @@ import {
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
+import { BioSection, BioYear } from '../components/bio'
 
 const Page = () => {
   return (
@@ -35,7 +36,9 @@ const Page = () => {
           <Heading as="h2" variant="page-title">
             Taylor Yip
           </Heading>
-          <p>Flumples ( Software Developer / Graphic Designer / Streamer )</p>
+          <p>
+            <i>Software Developer</i> / <i>Graphic Designer</i>
+          </p>
         </Box>
         <Box
           flexShrink={0}
@@ -56,7 +59,7 @@ const Page = () => {
         </Box>
       </Box>
 
-      <Section delay={0.1}>
+      <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
           Work
         </Heading>
@@ -76,6 +79,80 @@ const Page = () => {
             </Button>
           </NextLink>
         </Box>
+      </Section>
+
+      <br></br>
+
+      <Section delay={0.7}>
+        <Heading as="h3" variant="section-title">
+          Bio
+        </Heading>
+        <BioSection>
+          <BioYear>1998</BioYear>
+          Born in Monterey Park, California
+        </BioSection>
+        <BioSection>
+          <BioYear>2014</BioYear>
+          <b>Graphic Designer &#38; Web Designer</b> for{' '}
+          <u>
+            <i>
+              <a style={{ color: 'teal' }} href="https://revautocarcare.com/">
+                www.revautocarcare.com
+              </a>
+            </i>
+          </u>
+        </BioSection>
+        <BioSection>
+          <BioYear>2016</BioYear>
+          Graduated from <i>West Covina High School</i>
+        </BioSection>
+        <BioSection>
+          <BioYear>2018</BioYear>
+          <b>Graphic Designer, Web Designer, and Auto Detailer</b> for{' '}
+          <u>
+            <i>
+              <a
+                style={{ color: 'teal' }}
+                href="https://aerowerkz.com/index.html"
+              >
+                www.aerowerkz.com
+              </a>
+            </i>
+          </u>
+        </BioSection>
+        <BioSection>
+          <BioYear>2020</BioYear>
+          Graduated from{' '}
+          <i>General Assembly&apos;s Software Engineering Fellowship</i>
+        </BioSection>
+        <BioSection>
+          <BioYear>2022</BioYear>
+          Worked at <i>Newegg</i> as a <b>RMA Repair Specialist</b>
+        </BioSection>
+      </Section>
+
+      <br></br>
+
+      <Section delay={0.7}>
+        <Heading as="h3" variant="section-title">
+          I <b style={{ color: '#ff6961' }}>❤</b>
+        </Heading>
+        <BioSection>
+          <BioYear>Design</BioYear>
+          Lorem ipsum
+        </BioSection>
+        <BioSection>
+          <BioYear>Music</BioYear>
+          Lorem ipsum
+        </BioSection>
+        <BioSection>
+          <BioYear>Cars</BioYear>
+          Lorem ipsum
+        </BioSection>
+        <BioSection>
+          <BioYear>Video Games</BioYear>
+          Lorem ipsum
+        </BioSection>
       </Section>
     </Container>
   )
