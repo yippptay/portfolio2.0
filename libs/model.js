@@ -1,11 +1,11 @@
-import { GLFTLoader, GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 
 export function loadGLTFModel(
   scene,
   glbPath,
-  options = { recieveShadow: true, castShadow: true }
+  options = { receiveShadow: true, castShadow: true }
 ) {
-  const { recieveShadow, castShadow } = options
+  const { receiveShadow, castShadow } = options
   return new Promise((resolve, reject) => {
     const loader = new GLTFLoader()
 
@@ -16,14 +16,14 @@ export function loadGLTFModel(
         obj.name = 'dog'
         obj.position.y = 0
         obj.position.x = 0
-        obj.recieveShadow = recieveShadow
+        obj.receiveShadow = receiveShadow
         obj.castShadow = castShadow
         scene.add(obj)
 
         obj.traverse(function (child) {
           if (child.isMesh) {
             child.castShadow = castShadow
-            child.receiveShadow = recieveShado
+            child.receiveShadow = receiveShadow
           }
         })
         resolve(obj)
