@@ -10,6 +10,7 @@ const Works = () => {
   /** WorkGridItem UPDATE NEEDED **/
   return (
     <Layout>
+      <br />
       <Container>
         <Heading as="h3" fontSize={20} mb={4}>
           Works
@@ -36,11 +37,11 @@ const Works = () => {
           <SimpleGrid columns={[1, 1, 2]} gap={6}>
             <Section>
               <WorkGridItem
-                id="inkdrop"
-                title="Inkdrop"
+                id="modetokyo"
+                title="Modetokyo"
                 thumbnail={thumbInkdrop}
               >
-                Lorem ipsum
+                Mode.Tokyo
               </WorkGridItem>
             </Section>
             <Section>

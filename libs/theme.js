@@ -45,5 +45,4 @@ const config = {
 }
 
 const theme = extendTheme({ config, styles, components, fonts, colors })
-
 export default theme

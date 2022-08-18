@@ -31,7 +31,7 @@ const Loader = () => {
   return (
     <DogContainer>
       <DogSpinner />
-    </DogContainer>
+    </DogContainer> 
   )
 }
 
